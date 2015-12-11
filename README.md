@@ -45,3 +45,11 @@
     select *
     from public.kickstarter
     where reward_levels NOT LIKE '%$20%'
+    
+    select *
+    from public.kickstarter
+    where sub_cateogry ILIKE '%film%'
+    
+    select *
+    from public.kickstarter
+    where name ILIKE '%syria%'
