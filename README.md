@@ -13,3 +13,7 @@
     select distinct project_id
     from public.kickstarter
     where succeeded IS TRUE
+    
+    select distinct project_id
+    from public.kickstarter
+    where succeeded='TRUE'
