@@ -9,3 +9,7 @@
     select *
     from public.kickstarter
     where goal<10000
+    
+    select distinct project_id
+    from public.kickstarter
+    where succeeded IS TRUE
