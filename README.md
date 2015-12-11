@@ -60,4 +60,5 @@
     
     select *
     from public.kickstarter
-    where ((goal<1000 OR status='successful') AND country='U.S.') AND (category ILIKE '%film%' AND date_updated>='2015-10-01')
+    where ((goal<1000 OR status='successful') AND country='U.S.') 
+    AND (category ILIKE '%film%' AND date_updated>='2015-10-01')
