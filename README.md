@@ -33,3 +33,15 @@
     select *
     from public.kickstarter
     where sub_category IN ('Short Film', 'Film & Video', 'Fiction')
+    
+    select *
+    from public.kickstarter
+    where sub_cateogry LIKE '%Film%'
+    
+    select *
+    from public.kickstarter
+    where name LIKE '&quot%'
+    
+    select *
+    from public.kickstarter
+    where reward_levels NOT LIKE '%$20%'
