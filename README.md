@@ -53,3 +53,11 @@
     select *
     from public.kickstarter
     where name ILIKE '%syria%'
+    
+    select distinct category, sub-category
+    from public.kickstarter
+    where (country='U.S.' OR city IN ('London', 'Paris')) AND status='successful'
+    
+    select *
+    from public.kickstarter
+    where ((goal<1000 OR status='successful') AND country='U.S.') AND (category ILIKE '%film%' AND date_updated>='2015-10-01')
