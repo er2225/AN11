@@ -17,3 +17,11 @@
     select distinct project_id
     from public.kickstarter
     where succeeded='TRUE'
+
+    select distinct url
+    from public.kickstarter
+    where status='successful'
+    
+    select *
+    from public.kickstarter
+    where sub_category='Short Film'
