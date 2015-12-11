@@ -25,3 +25,11 @@
     select *
     from public.kickstarter
     where sub_category='Short Film'
+    
+    select *
+    from public.kickstarter
+    where levles IN (6, 7, 8)
+    
+    select *
+    from public.kickstarter
+    where sub_category IN ('Short Film', 'Film & Video', 'Fiction')
