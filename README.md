@@ -1,2 +1,2 @@
-    sql
-select * from public.kickstarter
+    select * 
+    from public.kickstarter
