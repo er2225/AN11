@@ -62,3 +62,11 @@
     from public.kickstarter
     where ((goal<1000 OR status='successful') AND country='U.S.') 
     AND (category ILIKE '%film%' AND date_updated>='2015-10-01')
+    
+    
+    select distinct category, sub_category, status
+    from public.kickstarter
+    where ((goal<10000 OR (status='failed' AND country IN ('U.S.', 'Ghana', 'Ethiopia'))
+    AND (category ILIKE '%film%' AND date_updated>='2015-10-01'))
+    OR status='live' OR pledged>100000
+    
